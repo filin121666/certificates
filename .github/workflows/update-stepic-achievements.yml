@@ -1,0 +1,47 @@
+name: Update Stepik achievements
+
+on:
+  schedule:
+    # 00:00 MSK daily. MSK is UTC+3, so this is 21:00 UTC previous day
+    - cron: '0 21 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  fetch-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch Stepik achievements JSON
+        run: |
+          set -euo pipefail
+          URL="https://stepik.org/api/certificates?user=650857614"
+          OUT_FILE="stepic_achievements.json"
+          # Fetch to temp file first
+          curl -sSL "$URL" -o tmp.json
+          # Validate JSON (jq exits non-zero on invalid JSON)
+          if command -v jq >/dev/null 2>&1; then
+            jq . tmp.json > "$OUT_FILE"
+          else
+            # Fallback if jq is not available
+            cp tmp.json "$OUT_FILE"
+          fi
+          rm -f tmp.json
+
+      - name: Commit and push if changed
+        run: |
+          set -euo pipefail
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
+          git add stepic_achievements.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "update Stepik achievements"
+          git push
+
+
