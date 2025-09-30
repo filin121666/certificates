@@ -6,6 +6,9 @@ on:
     - cron: '0 21 * * *'
   workflow_dispatch: {}
 
+permissions:
+  contents: write
+
 jobs:
   fetch-and-commit:
     runs-on: ubuntu-latest
@@ -34,6 +37,8 @@ jobs:
       - name: Commit and push if changed
         run: |
           set -euo pipefail
+          # Ensure remote uses GITHUB_TOKEN for authentication
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}"
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com"
           git add stepic_achievements.json
@@ -41,7 +46,7 @@ jobs:
             echo "No changes to commit."
             exit 0
           fi
-          git commit -m "update Stepik achievements"
+          git commit -m "chore: update Stepik achievements"
           git push
 
 
