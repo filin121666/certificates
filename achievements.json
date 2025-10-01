@@ -64,6 +64,20 @@
         "url": "https://certificate.2035.university/platform/922ae4fa-8a71-45f9-ad6e-685afde4b723.pdf"
     },
     {
+        "id": "talent_nto",
+        "name": "Талант НТО",
+        "achievements": [
+            {
+                "title": "Победил в конкурсе цифровых портфолио \"Талант НТО\" в компетенции \"Программирование\". Подтверждено сертификатом.",
+                "url": "https://github.com/filin121666/certificates/blob/main/talent_nto/programming_2024_2025.pdf"
+            },
+            {
+                "title": "Занял призовое место в конкурсе цифровых портфолио \"Талант НТО\" в компетенции \"Разработка бизнес приложений\". Подтверждено сертификатом.",
+                "url": "https://github.com/filin121666/certificates/blob/main/talent_nto/programming_2024_2025.pdf"
+            }
+        ]
+    },
+    {
         "id": "path_to_it",
         "name": "Путь в IT",
         "body": "Участвовал в олимпиаде по математике и программированию «Путь в IT» от \"Maximum Education\" в 2023/2024 учебном году. Подтверждено сертификатом участника второго тура.",
@@ -110,6 +124,12 @@
         "name": "ИТ Диктант 2025",
         "body": "Принял участие во всероссийской образовательной акции \"ИТ-диктант\" и набрал в нём 100 из 100 баллов. Подтверждено сертификатом.",
         "url": "https://github.com/filin121666/certificates/blob/main/it_dictation/it_dictation_2025.pdf"
+    },
+    {
+        "id": "invitaion_stage_of_vsosh_2025",
+        "name": "Пригласительный этап ВСОШ 2025 по физике",
+        "body": "Успешно прошёл пригласительный этап всероссийской олимпиады школьников по физике. Подтверждено сертификатом.",
+        "url": "https://github.com/filin121666/certificates/blob/main/invitation_stage_of_vsosh/invitation_stage_of_vsosh_2025.pdf"
     },
     {
         "id": "physics_with_pigalitsyn",
