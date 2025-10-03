@@ -234,6 +234,29 @@
       "course_is_public": true,
       "course_language": "ru",
       "is_with_score": false
+    },
+    {
+      "id": 2977559,
+      "user": 650857614,
+      "course": 227851,
+      "issue_date": "2025-10-03T17:02:38Z",
+      "update_date": "2025-10-03T18:36:56Z",
+      "grade": 100,
+      "type": "distinction",
+      "url": "https://stepik.org/certificate/0047bc4e732d2fade4937f26d1d5e1c258724df4.pdf",
+      "preview_url": "https://stepik.org/certificate/0047bc4e732d2fade4937f26d1d5e1c258724df4.png",
+      "is_public": true,
+      "user_rank": null,
+      "user_rank_max": null,
+      "leaderboard_size": null,
+      "saved_fullname": "Кирилл Шанин",
+      "edits_count": 0,
+      "allowed_edits_count": 1,
+      "course_title": "DevOps простым языком",
+      "course_title_en": "DevOps - in simple language",
+      "course_is_public": true,
+      "course_language": "ru",
+      "is_with_score": true
     }
   ]
 }
