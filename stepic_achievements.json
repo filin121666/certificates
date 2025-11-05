@@ -280,6 +280,29 @@
       "course_is_public": true,
       "course_language": "ru",
       "is_with_score": true
+    },
+    {
+      "id": 3015105,
+      "user": 650857614,
+      "course": 169003,
+      "issue_date": "2025-11-05T04:42:23Z",
+      "update_date": "2025-11-05T04:42:31Z",
+      "grade": 64,
+      "type": "regular",
+      "url": "https://stepik.org/certificate/dac5e4b690ba1166a664fcc5011b851ae5d3e277.pdf",
+      "preview_url": "https://stepik.org/certificate/dac5e4b690ba1166a664fcc5011b851ae5d3e277.png",
+      "is_public": true,
+      "user_rank": null,
+      "user_rank_max": null,
+      "leaderboard_size": null,
+      "saved_fullname": "Кирилл Шанин",
+      "edits_count": 0,
+      "allowed_edits_count": 1,
+      "course_title": "«Профессия — Белый Хакер»",
+      "course_title_en": "\"Profession — White Hacker\"",
+      "course_is_public": true,
+      "course_language": "ru",
+      "is_with_score": true
     }
   ]
 }
